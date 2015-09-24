@@ -1,0 +1,10 @@
+[Unit]
+Description=Twitlistauth
+
+[Service]
+Type=simple
+ExecStart=/home/cole/Code/colemickens/twitlistauth-rust/target/release/twitlistauth
+EnvironmentFile=/etc/twitlistauth/twitlistauth.config
+
+[Install]
+WantedBy=multi-user.target
